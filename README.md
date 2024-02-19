@@ -66,19 +66,19 @@ After you login to Jenkins, - Run the command to copy the Jenkins Admin Password
 
 ### Click on Install suggested plugins
 
-<img width="1291" alt="Screenshot 2023-02-01 at 10 58 40 AM" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/Jenkins-3.png">
+<img width="1291" alt="image3" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/jenkins-3.png">
 
 Wait for the Jenkins to Install suggested plugins
 
-<img width="1291" alt="Screenshot 2023-02-01 at 10 59 31 AM" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/Jenkins-4.png">
+<img width="1291" alt="image4" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/jenkins-4.png">
 
 Create First Admin User or Skip the step [If you want to use this Jenkins instance for future use-cases as well, better to create admin user]
 
-<img width="990" alt="Screenshot 2023-02-01 at 11 02 09 AM" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/Jenkins-5.png">
+<img width="990" alt="image5" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/jenkins-5.png">
 
 Jenkins Installation is Successful. You can now starting using the Jenkins
 
-<img width="990" alt="Screenshot 2023-02-01 at 11 14 13 AM" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/Jenkins-6.png">
+<img width="990" alt="image6" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/jenkins-6.png">
 
 ## Install the Docker Pipeline plugin in Jenkins:
 
@@ -88,7 +88,7 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 - Select the plugin and click the Install button.
 - Restart Jenkins after the plugin is installed.
 
-<img width="1392" alt="Screenshot 2023-02-01 at 12 17 02 PM" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/Jenkins-7.png">
+<img width="1392" alt="image7" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/jenkins-7.png">
 
 Wait for the Jenkins to be restarted.
 
