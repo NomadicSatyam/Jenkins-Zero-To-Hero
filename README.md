@@ -52,7 +52,7 @@ sudo apt-get install jenkins
 - Security groups
 - Add inbound traffic rules as shown in the image (you can just allow TCP 8080 as well, in my case, I allowed `All traffic`).
 
-<img width="1187" alt="Screenshot 2023-02-01 at 12 42 01 PM" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/Jenkins-1.png">
+<img width="1187" alt="image1" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/Jenkins-1.png">
 
 ### Login to Jenkins using the below URL:
 
@@ -62,7 +62,7 @@ Note: If you are not interested in allowing `All Traffic` to your EC2 instance 1
 
 After you login to Jenkins, - Run the command to copy the Jenkins Admin Password - `sudo cat /var/lib/jenkins/secrets/initialAdminPassword` - Enter the Administrator password
 
-<img width="1291" alt="Screenshot 2023-02-01 at 10 56 25 AM" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/Jenkins-2.png">
+<img width="1291" alt="image2" src="https://github.com/NomadicSatyam/Github-Repo-Resources/blob/dev/Jenkins-Resource/jenkins-2.png">
 
 ### Click on Install suggested plugins
 
