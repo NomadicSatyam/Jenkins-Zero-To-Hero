@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Cleanup Workspace') {
+            steps {
+                // Clean up the workspace to start with a clean slate
+                cleanWs()
+            }
+        }
+
+
+        stage('Clone Code') {
+            steps {
+                // Your build steps here
+                echo 'Cloning The Code ...'
+                git url: "https://github.com/NomadicSatyam/Student-Registration-CRUD-Project.git" , branch:"dev"
+            }
+        }
+        stage('Build') {
+            steps {
+                // Your build steps here
+                echo 'Building The Docker Image...'
+                sh "docker build -t my-note-app ."
+            }
+        }
+        stage('Push the DockerHub') {
+    steps {
+        echo 'Pushing the image into Docker Hub...'
+        withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPass', usernameVariable: 'dockerHubUser')]) {
+            sh "docker tag my-note-app ${env.dockerHubUser}/student-registration-crud-project:03"
+            sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPass}"
+            sh "docker push ${env.dockerHubUser}/student-registration-crud-project:03"
+        }
+    }
+}
+
+        stage('Deploy') {
+            steps {
+                // Your deployment steps here
+                echo 'Deploying The Container...'
+                //sh "docker run -d -p 8000:8000 satyambrother/my-note-app:latest"
+                sh "docker-compose down && docker-compose up -d"
+            }
+        }
+    }
+}
