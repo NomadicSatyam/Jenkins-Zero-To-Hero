@@ -52,8 +52,10 @@ Hurray !! Access the application on `http://<ip-address>:8010`
 ### Configure a Sonar Server locally
 
 ```
-apt install unzip
+sudo apt install unzip
+sudo su -
 adduser sonarqube
+sudo su - sonarqube
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
 unzip *
 chmod -R 755 /home/sonarqube/sonarqube-9.4.0.54424
@@ -61,7 +63,19 @@ chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
 cd sonarqube-9.4.0.54424/bin/linux-x86-64/
 ./sonar.sh start
 ```
-
+Command to go back sonarqube user to root user 
+```
+logout
+```
 Hurray !! Now you can access the `SonarQube Server` on `http://<ip-address>:9000` 
+
+## generate token in sonarqube and add in jenkins
+
+## Create Pipeline in Jenkins Like ultimate-demo
+
+## Choose SCM for pipeline then Git 
+
+## Install Minikube in local machine or setup kubeadm or EKS 
+## Install Argo Cd using Operatohub.io
 
 
